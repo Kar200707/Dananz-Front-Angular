@@ -25,6 +25,38 @@
   font-style: normal;
   font-weight: bolder;
   line-height: 160%;
-  margin-top: 50px;
   text-decoration: underline #0d45be;
+}
+
+@media screen and (max-width: 880px) {
+  .parent > div > h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .parent {
+      flex-direction: column;
+  }
+
+  .parent > div > h2 {
+    text-align: center;
+  }
+
+  .parent > div > a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .parent > img {
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .parent > img {
+    width: 70%;
+  }
 }
