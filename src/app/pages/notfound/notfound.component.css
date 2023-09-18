@@ -1,29 +1,24 @@
-div {
+.parent {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 100px 0 50px 0;
-  flex-direction: column;
 }
 
-div > h1 {
-  font-size: 60px;
-  color: red;
-  font-family: Chandas;
+.parent > img {
+  width: 40%;
+  object-fit: cover;
 }
 
-div > h2 {
-  color: #545454;
+.parent > div > h2 {
+  color: #2e70ff;
   font-family: Poppins;
-  font-size: 56px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 140%;
 }
 
 
-div > a {
+.parent > div > a {
   color: #1c1c1c;
   font-family: Poppins;
   font-size: 35px;
