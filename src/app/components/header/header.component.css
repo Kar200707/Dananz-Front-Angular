@@ -1,0 +1,203 @@
+.header_block {
+  margin-top: 40px;
+}
+
+.header-container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-text {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 31.93px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.header-logo-box {
+  position: relative;
+}
+
+.header-logo-box > svg {
+  position: absolute;
+  top: 29px;
+  left: 54px;
+}
+
+.header-logo-box > svg + svg {
+  position: absolute;
+  top: 41px;
+  left: 54px;
+}
+
+.header-logo-box > svg + svg + svg {
+  position: absolute;
+  top: 41px;
+  left: 94px;
+}
+
+.header-links-mobile {
+  display: none;
+}
+
+.header-links-mobile > label > img {
+  width: 40px;
+  display: block;
+}
+
+.header-links-mobile > label > input:checked + .links  {
+  display: flex;
+}
+.header-links-mobile > label > input {
+  display: none;
+}
+
+.header-links-mobile > label > .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: rgba(138, 138, 138, 0.53);
+  border-radius: 20px;
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+  z-index: 999;
+}
+
+.header-links-mobile > label > .links > a {
+  color: #333;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-decoration: none;
+  display: block;
+  transition: .2s scale cubic-bezier(.5 ,-1, .5, 2);
+  margin-bottom: 5px;
+}
+
+.header-links-mobile > label > .links > a {
+  margin-top: 20px;
+}
+
+.header-links-mobile > label > .links > a + a,
+.header-links-mobile > label > .links > a + a + a {
+  margin-top: 0;
+}
+
+.header-links-mobile > label > .links > a + a + a + a {
+  margin-bottom: 20px;
+}
+
+
+.header-links-mobile > label > .links > a:active {
+  scale: 0.95;
+}
+
+.header-links-mobile > label > .links > .contact-us-button {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14px 32px;
+  border: 1px solid #3C3C3C;
+  background: #2C3878;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-links > a {
+  color: #333;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-decoration: none;
+  display: block;
+  transition: .2s cubic-bezier(.5 ,-1, .5, 2);
+}
+
+.header-links > a:hover {
+  color: #000000;
+}
+.header-links > a:active {
+  scale: 0.95;
+}
+
+.header-links > a + a,
+.header-links > a + a + a,
+.header-links > a + a + a {
+  font-family: Poppins;
+  font-weight: 400;
+  margin-left: 74px;
+}
+
+.header-links > .contact-us-button {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14px 32px;
+  border: 1px solid #3C3C3C;
+  background: #2C3878;
+}
+
+.header-links > .contact-us-button:hover {
+  color: #ffffff;
+  background: #394da1;
+}
+
+/* media */
+
+@media screen and (max-width: 1250px) {
+  .header-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .header-links > a + a,
+  .header-links > a + a + a,
+  .header-links > a + a + a {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header_block {
+    margin-top: 15px;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-links-mobile {
+    display: block;
+  }
+}
+
+.active {
+  background-color: #2e70ff;
+  padding: 10px;
+  border-radius: 15px;
+  scale: 1.2;
+}

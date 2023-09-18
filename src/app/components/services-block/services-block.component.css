@@ -1,0 +1,148 @@
+.service-block > .container > h4 {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  position: relative;
+}
+
+.service-block > .container > h4::after {
+  content: "";
+  width: 516px;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 84px;
+}
+
+.service-block > .container > h2 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%;
+  margin-top: 20px;
+}
+
+.service-block > .container > p {
+  width: 471px;
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 25px;
+}
+
+.service-block > .container >
+.service-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.service-block > .container >
+.service-blocks > .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.10);
+  padding: 20px 27px 22px 27px;
+}
+
+.service-block > .container >
+.service-blocks > .block > .circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 140px;
+  background-color: #D9D9D9;
+}
+
+.service-block > .container >
+.service-blocks > .block > h3 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.service-block > .container >
+.service-blocks > .block > p {
+  color: #9C9C9C;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 20px;
+  width: 334px;
+}
+
+
+/* media */
+
+@media screen and (max-width: 1250px) {
+  .service-block > .container >
+  .service-blocks > .block {
+    width: 32%;
+    height: 420px;
+  }
+
+  .service-block > .container >
+  .service-blocks > .block > p {
+    width: 100%;
+  }
+
+  .service-block > .container >
+  .service-blocks > .block > .circle {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .service-block > .container >
+  .service-blocks {
+    flex-direction: column;
+  }
+
+  .service-block > .container >
+  .service-blocks > .block {
+    margin-top: 0;
+    width: 100%;
+    height: unset;
+  }
+
+  .service-block > .container >
+  .service-blocks > .block + .block {
+    margin-top: 40px;
+  }
+
+  .service-block > .container >
+  .service-blocks > .block + .block + .block {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .service-block > .container > h4::after {
+    width: 70%;
+  }
+
+  .service-block > .container > p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0 50px 0;
+  flex-direction: column;
+}
+
+div > h1 {
+  font-size: 60px;
+  color: red;
+  font-family: Chandas;
+}
+
+div > h2 {
+  color: #545454;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+
+div > a {
+  color: #1c1c1c;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 160%;
+  margin-top: 50px;
+  text-decoration: underline #0d45be;
+}

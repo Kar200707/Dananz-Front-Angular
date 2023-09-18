@@ -1,0 +1,155 @@
+.portfolio-details-block {
+  margin-top: 100px;
+}
+
+.portfolio-details-block > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-details-block > .container > h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.portfolio-details-block > .container > p {
+  max-width: 518px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 40px;
+}
+
+.portfolio-details-block > .container > img {
+  width: 100%;
+  height: 513px;
+  object-fit: cover;
+  margin-top: 53px;
+}
+
+/* text block */
+
+.portfolio-details-text-block {
+  margin-top: 100px;
+}
+
+.portfolio-details-text-block > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview {
+  width: 584px;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview > h3 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview > p {
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 24px;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview > div > p + p {
+  margin-right: 163px;
+}
+
+.portfolio-details-text-block > .container
+> .project-overview > div > p {
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.portfolio-details-text-block > .container
+> .desgin-progress {
+  width: 584px;
+}
+
+.portfolio-details-text-block > .container
+> .desgin-progress > h3 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.portfolio-details-text-block > .container
+> .desgin-progress > p {
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 24px;
+}
+
+.portfolio-details-text-block > .container
+> .desgin-progress > p + p {
+  margin-top: 30px;
+}
+
+.portfolio-details-text-block > .images-block {
+  margin-top: 82px;
+}
+
+.portfolio-details-text-block >
+.images-block > .container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-details-text-block >
+.images-block > .container > div > img {
+  width: 584px;
+  height: 513px;
+  object-fit: cover;
+}
+
+.portfolio-details-text-block >
+.images-block > .container > img {
+  width: 100%;
+  height: 513px;
+  object-fit: cover;
+  margin-top: 32px;
+}

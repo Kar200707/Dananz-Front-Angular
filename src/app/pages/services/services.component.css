@@ -1,0 +1,109 @@
+.services-block-services {
+  margin-top: 100px;
+}
+
+.services-block-services > .container > h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+}
+
+.services-block-services > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-block-services > .container > p {
+  width: 518px;
+  color:  #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 36px;
+}
+
+.services-block-services > .container > img {
+  width: 100%;
+  height: 513px;
+  margin-top: 57px;
+  object-fit: cover;
+}
+
+.achievement-block-services {
+  margin-top: 100px;
+}
+
+.achievement-block-services > .container > h4 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.achievement-block-services > .container > h4::after {
+  content: "";
+  width: 464px;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 136px;
+}
+
+
+/* image and text block */
+
+
+.img-text-block-services {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-text-block-services > .container > .text-img_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-text-block-services > .container
+> .text-img_box > img {
+  width: 746px;
+  height: 365px;
+  object-fit: cover;
+}
+
+.img-text-block-services > .container
+> .text-img_box > .text-box > h4 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.img-text-block-services > .container
+> .text-img_box > .text-box > p {
+  width: 334px;
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 20px;
+}
