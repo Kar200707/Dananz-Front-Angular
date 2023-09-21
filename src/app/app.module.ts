@@ -15,42 +15,49 @@ import { PortfoiliosComponent } from './pages/portfoilios/portfoilios.component'
 import { PortfoliosDetailsComponent } from './pages/portfolios-details/portfolios-details.component';
 import {RouterModule, Routes} from "@angular/router";
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    title: 'Home'
-  },
-  {
-    path: 'about-us',
-    component: AboutUsComponent,
-    title: 'About Us'
-  },
-  {
-    path: 'sevices',
-    component: ServicesComponent,
-    title: 'Sevices'
-  },
-  {
-    path: 'our-teams',
-    component: OurTeamsComponent,
-    title: 'Our Teams'
-  },
-  {
-    path: 'contact-us',
-    component: ContactUsComponent,
-    title: 'Contact Us'
-  },
-  {
-    path: 'portofolios',
-    component: PortfoiliosComponent,
-    title: 'Portofolios'
-  },
-  {
-    path: 'portofolios-details',
-    component: PortfoliosDetailsComponent,
-    title: 'Portofolios Details'
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+        title: 'Home'
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent,
+        title: 'About Us'
+      },
+      {
+        path: 'sevices',
+        component: ServicesComponent,
+        title: 'Sevices'
+      },
+      {
+        path: 'our-teams',
+        component: OurTeamsComponent,
+        title: 'Our Teams'
+      },
+      {
+        path: 'contact-us',
+        component: ContactUsComponent,
+        title: 'Contact Us'
+      },
+      {
+        path: 'portofolios',
+        component: PortfoiliosComponent,
+        title: 'Portofolios'
+      },
+      {
+        path: 'portofolios-details',
+        component: PortfoliosDetailsComponent,
+        title: 'Portofolios Details'
+      }
+    ]
   },
   {
     path: '**',
@@ -73,7 +80,8 @@ const routes: Routes = [
     ContactUsComponent,
     PortfoiliosComponent,
     PortfoliosDetailsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
