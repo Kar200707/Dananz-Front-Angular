@@ -69,7 +69,7 @@
   background-color: rgba(0, 0, 0, 0.53);
   position: absolute;
   right: 0;
-  top: -500px;
+  top: -550px;
   transition: .5s;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -80,14 +80,18 @@
 
 
 .header-links-mobile > label > .links > label {
-  align-self: end;
-  margin-right: 15px;
+  align-self: center;
+  width: 90%;
 }
 
 .header-links-mobile > label > .links > label > p {
   font-size: 70px;
   text-align: end;
   color: white;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.46);
+  width: 100%;
+  border-radius: 10px;
 }
 
 .header-links-mobile > label > .links > a {

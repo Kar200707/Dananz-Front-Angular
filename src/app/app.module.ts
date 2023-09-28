@@ -16,6 +16,7 @@ import { PortfoliosDetailsComponent } from './pages/portfolios-details/portfolio
 import {RouterModule, Routes} from "@angular/router";
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LayoutComponent } from './layout/layout.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
   {
@@ -85,7 +86,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'}),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

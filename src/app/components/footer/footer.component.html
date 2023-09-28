@@ -11,7 +11,7 @@
             Contact us below to work together
             to build your amazing interior
           </p>
-          <a href="#" class="button_footer">Contact Us</a>
+          <a routerLink="/contact-us" class="button_footer">Contact Us</a>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
           <h2>One of the best furniture agency.</h2>
         </div>
         <div class="footer-input-block">
-          <form>
+          <form [formGroup]="forms">
             <label>
               <div class="text-box">
                 <div class="circle"></div>
@@ -42,22 +42,22 @@
                 </p>
                 <img class="footer-vector" src="assets/images/icons/footer-input-vector.svg" alt="vector">
               </div>
-              <input placeholder="Email Address" type="email">
+              <input formControlName="email" placeholder="Email Address" type="email">
             </label>
           </form>
           <div class="footer-social-sites-block">
             <p>Follow us On</p>
             <div class="social-sites-box">
-              <a href="#">
+              <a target="_blank" href="https://www.facebook.com/">
                 <img src="assets/images/icons/facebook.svg" alt="facebook">
               </a>
-              <a style="margin-left: 25px" href="#">
+              <a target="_blank" style="margin-left: 25px" href="https://www.instagram.com/?hl=en">
                 <img src="assets/images/icons/instagram.svg" alt="instagram">
               </a>
-              <a style="margin-left: 25px" href="#">
+              <a target="_blank" style="margin-left: 25px" href="https://www.tiktok.com/">
                 <img src="assets/images/icons/tiktok.svg" alt="tiktok">
               </a>
-              <a style="margin-left: 25px" href="#">
+              <a target="_blank" style="margin-left: 25px" href="https://www.youtube.com/">
                 <img src="assets/images/icons/youtube.svg" alt="youtube">
               </a>
             </div>
