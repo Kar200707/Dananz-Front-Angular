@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ServicesBlockComponent} from "../../components/services-block/services-block.component";
 
 @Component({
   selector: 'app-our-teams',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: [
     './our-teams.component.css',
     '../../styles/media.css'
+  ],
+  standalone: true,
+  imports: [
+    ServicesBlockComponent
   ]
 })
 export class OurTeamsComponent {

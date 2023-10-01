@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: [
     './portfolios-details.component.css',
     '../../styles/media.css'
-  ]
+  ],
+  standalone: true,
+  imports: [],
 })
 export class PortfoliosDetailsComponent {
 

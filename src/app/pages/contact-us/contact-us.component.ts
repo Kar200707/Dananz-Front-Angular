@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [
     './contact-us.component.css',
     '../../styles/media.css'
+  ],
+  standalone: true,
+  imports: [
+
   ]
 })
 export class ContactUsComponent {

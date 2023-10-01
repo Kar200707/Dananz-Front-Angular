@@ -1,0 +1,229 @@
+.about-image-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  position: relative;
+}
+
+.row-reverce {
+  flex-direction: row-reverse;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.about-image-block > img {
+  object-fit: cover;
+  width: 883px;
+  height: 525px;
+}
+
+.about-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-text-block > p {
+  width: 223px;
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 20px;
+}
+
+.about-text-block > h3 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-top: 80px;
+}
+
+.about-image-block > .user-info_block {
+  display: flex;
+  align-items: center;
+  padding: 17px 0 17px 20px;
+  position: absolute;
+  right: 116px;
+  top: 27px;
+  background-color: #FFF;
+  width: 276px;
+}
+
+.about-image-block > .user-info_block > img {
+  width: 51px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 56px;
+}
+
+.about-image-block > .user-info_block > .text_block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.about-image-block > .user-info_block > .text_block > p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.about-image-block > .user-info_block > .text_block > span {
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+/* reverce user info block */
+
+.about-image-block > .user-info_block-reverce {
+  display: flex;
+  align-items: center;
+  padding: 17px 0 17px 20px;
+  position: absolute;
+  left: 121px;
+  top: 27px;
+  background-color: #FFF;
+  width: 276px;
+}
+
+.about-image-block > .user-info_block-reverce > .text_block > span {
+  color: #9C9C9C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.about-image-block > .user-info_block-reverce > .text_block > p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.about-image-block > .user-info_block-reverce > .text_block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.about-image-block > .user-info_block-reverce > img {
+  width: 51px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 56px;
+}
+
+@media screen and (max-width: 550px) {
+  .about-image-block > .user-info_block-reverce {
+    margin-top: 50px;
+  }
+
+  .row-reverce,
+  .row {
+    flex-direction: column;
+  }
+
+  .about-text-block > h3 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1246px) {
+  .about-image-block > img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 926px) {
+  .about-image-block > img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about-image-block > img {
+    width: 50%;
+  }
+
+  .about-block > .container > h4::after {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-image-block > img {
+    /*display: none;*/
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+    height: 200px;
+  }
+
+  .about-image-block > .user-info_block-reverce,
+  .about-image-block > .user-info_block {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .about-image-block > .user-info_block,
+  .about-image-block > .user-info_block-reverce {
+    position: unset;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .about-image-block {
+    flex-direction: column;
+  }
+
+  .about-text-block > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-text-block {
+    align-items: center;
+  }
+
+  .about-block {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .about-block > .container > h2 {
+    font-size: 30px;
+  }
+
+  .about-block > .container > h4::after {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-block > .container > h2 {
+    font-size: 25px;
+  }
+}

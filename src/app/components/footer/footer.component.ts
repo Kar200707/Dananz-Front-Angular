@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,11 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: [
     './footer.component.css',
     '../../styles/media.css'
+  ],
+  standalone: true,
+  imports: [
+    ReactiveFormsModule,
+    RouterModule
   ]
 })
 export class FooterComponent {

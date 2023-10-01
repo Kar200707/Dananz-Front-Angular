@@ -13,82 +13,13 @@
 <div class="portfolio-block-portfolio">
   <div class="container">
     <h4>Portfolio</h4>
-    <div style="margin-top: 40px" class="about-image-block">
-      <img src="assets/images/img1-portfolio.png" alt="this is image">
-      <div class="about-text-block">
-        <h3>Minimalist Room</h3>
-        <p>
-          Online learning with us does not interfere
-          with your daily life. because learning can be
-          done anytime and anywhere.
-        </p>
-        <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
-      </div>
-      <div class="user-info_block">
-        <img src="assets/images/user-img.png" alt="user image">
-        <div class="text_block">
-          <p>Arga Danaan</p>
-          <span>CEO of Dananz</span>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 40px" class="about-image-block">
-      <div class="about-text-block">
-        <h3>Vintage Room</h3>
-        <p>
-          Online learning with us does not interfere
-          with your daily life. because learning can be
-          done anytime and anywhere.
-        </p>
-        <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
-      </div>
-      <img src="assets/images/img2-portfolio.png" alt="this is image">
-      <div class="user-info_block-reverce">
-        <img src="assets/images/user-img.png" alt="user image">
-        <div class="text_block">
-          <p>Arga Danaan</p>
-          <span>CEO of Dananz</span>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 40px" class="about-image-block">
-      <img src="assets/images/img3-portfolio.png" alt="this is image">
-      <div class="about-text-block">
-        <h3>Modern Room</h3>
-        <p>
-          Online learning with us does not interfere
-          with your daily life. because learning can be
-          done anytime and anywhere.
-        </p>
-        <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
-      </div>
-      <div class="user-info_block">
-        <img src="assets/images/user-img.png" alt="user image">
-        <div class="text_block">
-          <p>Arga Danaan</p>
-          <span>CEO of Dananz</span>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 40px" class="about-image-block">
-      <div class="about-text-block">
-        <h3>transitional Room</h3>
-        <p>
-          Online learning with us does not interfere
-          with your daily life. because learning can be
-          done anytime and anywhere.
-        </p>
-        <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
-      </div>
-      <img src="assets/images/img4-portfolio.png" alt="this is image">
-      <div class="user-info_block-reverce">
-        <img src="assets/images/user-img.png" alt="user image">
-        <div class="text_block">
-          <p>Arga Danaan</p>
-          <span>CEO of Dananz</span>
-        </div>
-      </div>
-    </div>
+    <app-about-block
+      *ngFor="
+        let data of aboutUsBlockDate,
+        let i = index" [aboutBlockDate]="data
+      "
+      [isReverce]="i % 2 !== 0"
+    ></app-about-block>
   </div>
 </div>
 <app-services-block></app-services-block>

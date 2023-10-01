@@ -1,0 +1,15 @@
+<div [class]="isReverce ? 'row-reverce' : 'row'" class="about-image-block">
+  <img src="{{ aboutBlockDate.img }}" alt="this is image">
+  <div class="about-text-block">
+    <h3>{{ aboutBlockDate.title }}</h3>
+    <p>{{ aboutBlockDate.description }}</p>
+    <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
+  </div>
+  <div [class]="isReverce ? 'user-info_block-reverce' : 'user-info_block'">
+    <img src="{{ aboutBlockDate.userImg }}" alt="user image">
+    <div class="text_block">
+      <p>{{ aboutBlockDate.userName }}</p>
+      <span>{{ aboutBlockDate.userDescription }}</span>
+    </div>
+  </div>
+</div>

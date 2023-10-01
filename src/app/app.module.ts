@@ -2,12 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductComponent } from './components/product/product.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { ServicesBlockComponent } from './components/services-block/services-block.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { OurTeamsComponent } from './pages/our-teams/our-teams.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
@@ -17,6 +13,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LayoutComponent } from './layout/layout.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { AboutBlockComponent } from './components/about-block/about-block.component';
 
 const routes: Routes = [
   {
@@ -68,22 +65,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    ProductComponent,
-    AboutUsComponent,
-    ServicesBlockComponent,
-    ServicesComponent,
-    OurTeamsComponent,
-    ContactUsComponent,
-    PortfoiliosComponent,
-    PortfoliosDetailsComponent,
-    NotfoundComponent,
-    LayoutComponent
-  ],
+  declarations: [ AppComponent ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'}),
