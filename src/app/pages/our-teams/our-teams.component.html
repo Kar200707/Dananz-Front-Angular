@@ -19,65 +19,27 @@
       fulfill your expectations.
     </p>
     <div class="user_block_our-temas-designer-block">
-      <div class="row">
-        <div class="user">
-          <img src="assets/images/user1-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
+      <div style="margin-top: 24px" class="row">
+        <ng-container *ngFor="let data of userInfoData, let i = index">
+          <div *ngIf="i < 4" class="user">
+            <img src="{{ data.userImg }}" alt="user">
+            <div class="username-block">
+              <h3>{{ data.userName }}</h3>
+              <p>{{ data.userBio }}</p>
+            </div>
           </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user2-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user3-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user4-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
+        </ng-container>
       </div>
       <div style="margin-top: 24px" class="row">
-        <div class="user">
-          <img src="assets/images/user5-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
+        <ng-container *ngFor="let data of userInfoData, let i = index">
+          <div *ngIf="i < 4" class="user">
+            <img src="{{ userInfoData[i + 4].userImg }}" alt="user">
+            <div class="username-block">
+              <h3>{{ userInfoData[i + 4].userName }}</h3>
+              <p>{{ userInfoData[i + 4].userBio }}</p>
+            </div>
           </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user6-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user7-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
-        <div class="user">
-          <img src="assets/images/user8-our-teams.png" alt="user">
-          <div class="username-block">
-            <h3>Shoo Phar Dhie</h3>
-            <p>CEO</p>
-          </div>
-        </div>
+        </ng-container>
       </div>
     </div>
   </div>
