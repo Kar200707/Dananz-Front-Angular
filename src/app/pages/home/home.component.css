@@ -226,6 +226,9 @@ div > .row-box > .row > div > p + p {
 div > .row-box > .row > a {
   transition: .2s scale cubic-bezier(.5 ,-1, .5, 2);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service_block > .container >

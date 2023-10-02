@@ -7,7 +7,6 @@
   user-select: none;
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: transparent;
-  scroll-behavior: smooth;
 }
 
 .container {

@@ -3,7 +3,7 @@
   <div class="about-text-block">
     <h3>{{ aboutBlockDate.title }}</h3>
     <p>{{ aboutBlockDate.description }}</p>
-    <a style="margin-top: 40px" class="global-button" href="#">Learn More</a>
+    <a style="margin-top: 40px" class="global-button" routerLink="/portofolios-details">Learn More</a>
   </div>
   <div [class]="isReverce ? 'user-info_block-reverce' : 'user-info_block'">
     <img src="{{ aboutBlockDate.userImg }}" alt="user image">

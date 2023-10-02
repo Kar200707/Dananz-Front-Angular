@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-product',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
     '../../styles/media.css'
   ],
   standalone: true,
-  imports: [],
+  imports: [
+    RouterModule
+  ],
 })
 export class ProductComponent {
 

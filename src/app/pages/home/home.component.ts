@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {ProductComponent} from "../../components/product/product.component";
 import {AboutBlockComponent} from "../../components/about-block/about-block.component";
 import {AboutBlock} from "../../models/about";
+import {RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import {AboutBlock} from "../../models/about";
   standalone: true,
   imports: [
     ProductComponent,
-    AboutBlockComponent
+    AboutBlockComponent,
+    RouterModule
   ]
 })
 export class HomeComponent {
