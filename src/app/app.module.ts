@@ -13,7 +13,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LayoutComponent } from './layout/layout.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { AboutBlockComponent } from './components/about-block/about-block.component';
+import { provideClientHydration } from "@angular/platform-browser";
 
 const routes: Routes = [
   {
@@ -68,11 +68,11 @@ const routes: Routes = [
   declarations: [ AppComponent ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'}),
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'top', initialNavigation: 'enabledBlocking' }),
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ provideClientHydration() ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
